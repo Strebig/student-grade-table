@@ -7,8 +7,15 @@ class App extends React.Component {
       grades: []
     };
   }
+
+  header() {
+    let header = 'Student Grade Table';
+    return header;
+  }
   render() {
-    return null;
+    return (
+      <h1>{this.header()}</h1>
+    );
   }
 }
 
