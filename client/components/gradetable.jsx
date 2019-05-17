@@ -15,20 +15,22 @@ class GradeTable extends React.Component {
     });
 
     return (
-      <div className="table-responsive-sm">
-        <table className="table table-striped table-bordered table-hover">
-          <thead className="thead-dark">
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Name</th>
-              <th scope="col">Course</th>
-              <th scope="col">Grade</th>
-            </tr>
-          </thead>
-          <tbody>
-            {row}
-          </tbody>
-        </table>
+      <div className="col-sm-9">
+        <div className="table-responsive-sm">
+          <table className="table table-striped table-bordered table-hover">
+            <thead className="thead-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Course</th>
+                <th scope="col">Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              {row}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }
