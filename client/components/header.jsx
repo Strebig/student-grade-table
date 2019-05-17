@@ -8,9 +8,11 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className='row'>
-        <h1 className='col-8'>{this.header()}</h1>
-        <h3 className='col-4'>Average Grade <span className="badge badge-secondary">{this.props.avg}</span></h3>
+      <div className="container">
+        <div className='row'>
+          <h1 className='col-8'>{this.header()}</h1>
+          <h3 className='col-4'>Average Grade <span className="badge badge-secondary">{this.props.avg}</span></h3>
+        </div>
       </div>
     );
   }
