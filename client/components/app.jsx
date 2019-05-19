@@ -40,6 +40,16 @@ class App extends React.Component {
       });
   }
 
+  deleteAGrade(e) {
+    let id = e.target.dataset.id;
+    const req = {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' }
+    };
+    fetch('/api/grades/' + id, req)
+      .then(this.getAllGrades());
+  }
+
   getAverageGrade() {
     const stateGrades = this.state.grades;
     let sum = 0;
@@ -57,7 +67,7 @@ class App extends React.Component {
       <div className='wrapper'>
         <Header avg={newAvg}/>
         <div className="row">
-          <GradeTable grades={this.state.grades}/>
+          <GradeTable grades={this.state.grades} delete={this.deleteAGrade.bind(this)}/>
           <GradeForm submit={this.addNewGrade}/>
         </div>
       </div>

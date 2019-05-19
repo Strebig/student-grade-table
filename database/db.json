@@ -7,22 +7,10 @@
       "id": 1
     },
     {
-      "name": "Scott Bowler",
-      "course": "Web Development",
-      "grade": 100,
-      "id": 2
-    },
-    {
       "name": "Tim Davis",
       "course": "Web Development",
       "grade": 50,
       "id": 3
-    },
-    {
-      "name": "test",
-      "course": "test",
-      "grade": "33",
-      "id": 331
     },
     {
       "name": "test",

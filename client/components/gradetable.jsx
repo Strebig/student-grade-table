@@ -10,6 +10,7 @@ class GradeTable extends React.Component {
           <td>{grade.name}</td>
           <td>{grade.course}</td>
           <td>{grade.grade}</td>
+          <td scope="col"><button onClick={this.props.delete} data-id={grade.id} className="btn btn-danger">X</button></td>
         </tr>
       );
     });
@@ -24,6 +25,7 @@ class GradeTable extends React.Component {
                 <th scope="col">Name</th>
                 <th scope="col">Course</th>
                 <th scope="col">Grade</th>
+                <th scope="col">Delete</th>
               </tr>
             </thead>
             <tbody>
